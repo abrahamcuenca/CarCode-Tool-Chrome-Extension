@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CarCode Reader</title>
+    <style>
+        button {
+            font-size: 14px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+<fieldset>
+    <legend>Detect CarCode on Page</legend>
+    <div>
+        <button id="checkForCarCode">Check for CarCode</button>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>Inject CarCode on Page</legend>
+    <div>
+        <label for="slug">Slug</label>
+        <input type="radio" id="slug" name="widget" value="slug"
+               checked>
+    </div>
+
+    <div>
+        <label for="dealer">Dealer Id</label>
+        <input type="radio" id="dealer" name="widget" value="dealer">
+    </div>
+
+    <div>
+        <input type="text" />
+        <button id="injectCarCode">Add CarCode</button>
+    </div>
+</fieldset>
+
+
+<script src="popup.js"></script>
+</body>
+</html>

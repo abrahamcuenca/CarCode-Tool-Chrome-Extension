@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "CarCode Reader",
+  "version": "1.0",
+  "description": "Reads the window.__carcode_wp_plugin object from the current page and logs it to the console.",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon.png"
+    }
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "icons": {
+    "48": "icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
