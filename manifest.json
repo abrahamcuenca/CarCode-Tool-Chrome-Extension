@@ -1,19 +1,20 @@
 {
   "manifest_version": 2,
-  "name": "CarCode Reader",
-  "version": "1.0",
-  "description": "Reads the window.__carcode_wp_plugin object from the current page and logs it to the console.",
+  "name": "CarCode Widget Tool",
+  "version": "1.1",
+  "description": "A Helpful tool for working with the CarCode Widget",
   "browser_action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "48": "icon.png"
+      "128": "icon.png"
     }
   },
   "permissions": [
+    "tabs",
     "activeTab"
   ],
   "icons": {
-    "48": "icon.png"
+    "128": "icon.png"
   },
   "background": {
     "scripts": ["background.js"],

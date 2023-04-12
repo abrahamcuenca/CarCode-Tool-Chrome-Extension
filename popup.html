@@ -15,28 +15,38 @@
     <div>
         <button id="checkForCarCode">Check for CarCode</button>
     </div>
+    <div id="details"></div>
 </fieldset>
 
 <fieldset>
     <legend>Inject CarCode on Page</legend>
-    <div>
-        <label for="slug">Slug</label>
-        <input type="radio" id="slug" name="widget" value="slug"
-               checked>
-    </div>
-
+    <strong>Widget Type:</strong>
     <div>
         <label for="dealer">Dealer Id</label>
-        <input type="radio" id="dealer" name="widget" value="dealer">
+        <input type="radio" id="dealer" name="widget" value="dealer" checked>
     </div>
-
     <div>
-        <input type="text" />
+        <label for="slug">Slug</label>
+        <input type="radio" id="slug" name="widget" value="slug">
+    </div>
+    <hr/>
+    <strong>Options:</strong>
+    <div>
+        <input type="checkbox" id="devDsg" name="devDsg" />
+        <label for="devDsg">Use Dev-Dsg environment</label>
+    </div>
+    <div>
+        <input type="Checkbox" id="skipOptimize" name="skipOptimize" value="dealer">
+        <label for="skipOptimize">Skip Optimization</label>
+    </div>
+    <div>
+        <label for="widgetId">Widget Id:</label><br/>
+        <input id="widgetId" name="widgetId" type="text" />
+        <hr/>
         <button id="injectCarCode">Add CarCode</button>
+        <div id="message"></div>
     </div>
 </fieldset>
-
-
 <script src="popup.js"></script>
 </body>
 </html>
